@@ -1,0 +1,23 @@
+@media (min-width: 640px) {
+  .is-home .main .name {
+    max-width: 100%;
+    text-align: center;
+  }
+  .is-home .main .text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .is-home .main .tagline {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+.is-home .main .text {
+  background: linear-gradient(-45deg, #47caff, #bd34fe, #41d1ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: var(--vp-home-hero-name-color);
+}
+.is-home .main .actions {
+  justify-content: center;
+}
