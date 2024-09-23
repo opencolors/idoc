@@ -13,10 +13,10 @@ export default defineConfig({
   cleanUrls: true,
   metaChunk: true,
   sitemap: {
-    hostname: 'https://www.idoc.dev',
+    hostname: 'https://idoc.dev',
     transformItems(items) {
       console.log(items)
-      const urls = items.map(item => `https://www.idoc.dev/${item.url}`)
+      const urls = items.map(item => `https://idoc.dev/${item.url}`)
       fs.writeFileSync('urls.json', JSON.stringify(urls, null, 2))
       return items.filter(item => {
         item.changefreq = 'monthly'
@@ -43,8 +43,8 @@ export default defineConfig({
     ['meta', { property: 'og:locale', content: 'en' }],
     ['meta', { property: 'og:title', content: 'iDoc | API & Guide for Developers' }],
     ['meta', { property: 'og:site_name', content: 'iDoc' }],
-    ['meta', { property: 'og:image', content: 'https://www.idoc.dev/logo.svg' }],
-    ['meta', { property: 'og:url', content: 'https://www.idoc.dev/' }],
+    ['meta', { property: 'og:image', content: 'https://idoc.dev/logo.svg' }],
+    ['meta', { property: 'og:url', content: 'https://idoc.dev/' }],
     // ['script', { src: 'https://cdn.usefathom.com/script.js', 'data-site': 'AZBRSFGG', 'data-spa': 'auto', defer: '' }]
   ],
 
