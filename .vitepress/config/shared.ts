@@ -45,7 +45,26 @@ export default defineConfig({
     ['meta', { property: 'og:site_name', content: 'iDoc' }],
     ['meta', { property: 'og:image', content: 'https://idoc.dev/logo.svg' }],
     ['meta', { property: 'og:url', content: 'https://idoc.dev/' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:site', content: 'idoc.dev' }],
+    ['meta', { name: 'twitter:image', content: 'https://idoc.dev/logo.svg' }],
+    ['meta', { name: 'twitter:title', content: 'iDoc | API & Guide for Developers' }],
+    ['meta', { name: 'twitter:creator', content: 'neo@idoc.dev' }],
+    ['meta', { name: 'twitter:url', content: 'https://node.idoc.dev/' }],
+    ['meta', { name: 'twitter:description', content: 'iDoc.dev is a free, Support Multiple Languages & Frameworks, Support Multiple document languages, For Developers' }],
     // ['script', { src: 'https://cdn.usefathom.com/script.js', 'data-site': 'AZBRSFGG', 'data-spa': 'auto', defer: '' }]
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-X0C67TVVXR' }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X0C67TVVXR');`
+    ]
   ],
 
   themeConfig: {
