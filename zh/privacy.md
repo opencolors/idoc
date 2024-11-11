@@ -73,4 +73,4 @@
 如果您对本隐私政策有任何疑问或担忧，请联系我们：
 - 电子邮箱：[support@idoc.dev](mailto:support@idoc.dev)
 
-感谢您访问 [iDoc.dev](https://idoc.dev)!
+感谢您访问 [iDoc.dev](https://idoc.dev/zh/)!

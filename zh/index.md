@@ -12,7 +12,7 @@ features:
         src: '/node-logo.svg'
     title: Node.js
     details: 在任何地方运行 JavaScript
-    link: https://node.idoc.dev
+    link: https://node.idoc.dev/zh/
 
 ---
 
