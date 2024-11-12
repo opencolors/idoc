@@ -17,7 +17,7 @@ export const zh = defineConfig({
 
     footer: {
       message: '<a href="/zh/privacy">Privacy Policy</a>',
-      copyright: 'Copyright © 2024-present <a href="https://idoc.dev">iDoc.dev</a>',
+      copyright: 'Copyright © 2024-present <a href="https://idoc.dev/zh/">iDoc.dev</a>',
     },
   },
 })

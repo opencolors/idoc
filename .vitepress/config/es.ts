@@ -17,7 +17,7 @@ export const es = defineConfig({
 
     footer: {
       message: '<a href="/es/privacy">Política de privacidad</a>',
-      copyright: 'Copyright © 2024-present <a href="https://idoc.dev">iDoc.dev</a>',
+      copyright: 'Copyright © 2024-present <a href="https://idoc.dev/es/">iDoc.dev</a>',
     },
   },
 })
