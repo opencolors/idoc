@@ -11,6 +11,7 @@ hero:
 features:
   - icon:
         src: '/node-logo.svg'
+        alt: Node.js
     title: Node.js
     details: Run JavaScript Everywhere
     link: https://node.idoc.dev
