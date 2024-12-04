@@ -1,3 +1,9 @@
+---
+head:
+  - - link
+    - rel: canonical
+      href: "https://idoc.dev/es/privacy"
+---
 # Política de Privacidad
 
 Bienvenido a iDoc.dev. Esta Política de Privacidad describe cómo recopilamos, usamos y protegemos su información personal cuando visita nuestro sitio web [https://idoc.dev](https://idoc.dev) (el "Sitio").

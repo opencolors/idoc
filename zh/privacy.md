@@ -1,3 +1,9 @@
+---
+head:
+  - - link
+    - rel: canonical
+      href: "https://idoc.dev/zh/privacy"
+---
 # 隐私政策
 
 欢迎访问 iDoc.dev。本隐私政策概述了当您访问我们的网站 [https://idoc.dev](https://idoc.dev)（以下简称“网站”）时，我们如何收集、使用和保护您的个人信息。
