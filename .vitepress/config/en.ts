@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export const en = defineConfig({
-  lang: 'en-US',
+  lang: 'en',
   title: 'iDoc',
   titleTemplate: 'API & Guide & For Developers',
   description:

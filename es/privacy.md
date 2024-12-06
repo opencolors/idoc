@@ -79,4 +79,4 @@ Podemos actualizar esta Política de Privacidad de vez en cuando. Cualquier camb
 Si tiene alguna pregunta o inquietud acerca de esta Política de Privacidad, por favor contáctenos en:
 - Correo electrónico: [support@idoc.dev](mailto:support@idoc.dev)
 
-¡Gracias por visitar [iDoc.dev](https://idoc.dev)!
+¡Gracias por visitar [iDoc.dev](https://idoc.dev/es/)!

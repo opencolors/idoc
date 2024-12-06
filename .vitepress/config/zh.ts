@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export const zh = defineConfig({
-  lang: 'zh-CN',
+  lang: 'zh',
   title: 'iDoc',
   titleTemplate: 'API & 指南 & 开发者的文档中心',
   description:
