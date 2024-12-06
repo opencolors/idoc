@@ -1,8 +1,4 @@
 ---
-head:
-  - - link
-    - rel: canonical
-      href: "https://idoc.dev/es/"
 layout: home
 
 hero:

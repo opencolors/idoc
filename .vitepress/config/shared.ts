@@ -51,21 +51,31 @@ export default defineConfig({
     ['meta', { name: 'twitter:title', content: 'iDoc | API & Guide for Developers' }],
     ['meta', { name: 'twitter:creator', content: 'neo@idoc.dev' }],
     ['meta', { name: 'twitter:url', content: 'https://node.idoc.dev/' }],
-    ['meta', { name: 'twitter:description', content: 'iDoc.dev is a free, Support Multiple Languages & Frameworks, Support Multiple document languages, For Developers' }],
-    // ['script', { src: 'https://cdn.usefathom.com/script.js', 'data-site': 'AZBRSFGG', 'data-spa': 'auto', defer: '' }]
     [
-      'script',
-      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-X0C67TVVXR' }
+      'meta',
+      {
+        name: 'twitter:description',
+        content:
+          'iDoc.dev is a free, Support Multiple Languages & Frameworks, Support Multiple document languages, For Developers',
+      },
     ],
+    // ['script', { src: 'https://cdn.usefathom.com/script.js', 'data-site': 'AZBRSFGG', 'data-spa': 'auto', defer: '' }]
+    ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-X0C67TVVXR' }],
     [
       'script',
       {},
       `window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-X0C67TVVXR');`
-    ]
+      gtag('config', 'G-X0C67TVVXR');`,
+    ],
   ],
+  transformPageData(pageData) {
+    const canonicalUrl = `https://idoc.dev/${pageData.relativePath}`.replace(/index\.md$/, '').replace(/\.md$/, '.html')
+
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push(['link', { rel: 'canonical', href: canonicalUrl }])
+  },
 
   themeConfig: {
     logo: { src: '/logo.svg', width: 24, height: 24 },

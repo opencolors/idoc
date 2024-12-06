@@ -1,9 +1,3 @@
----
-head:
-  - - link
-    - rel: canonical
-      href: "https://idoc.dev/privacy"
----
 # Privacy Policy
 
 Welcome to iDoc.dev. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website [https://idoc.dev](https://idoc.dev) (the "Site").
