@@ -5,6 +5,7 @@ import { en } from './en'
 import { zh } from './zh'
 import { es } from './es'
 import { fr } from './fr'
+import { pt } from './pt.ts'
 
 export default defineConfig({
   ...shared,
@@ -24,6 +25,10 @@ export default defineConfig({
     fr: {
       label: 'Français',
       ...fr,
+    },
+    pt: {
+      label: 'Português',
+      ...pt,
     },
   },
 })
