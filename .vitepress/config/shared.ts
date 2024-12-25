@@ -15,7 +15,6 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://idoc.dev',
     transformItems(items) {
-      console.log(items)
       const urls = items.map(item => `https://idoc.dev/${item.url}`)
       fs.writeFileSync('urls.json', JSON.stringify(urls, null, 2))
       return items.filter(item => {
