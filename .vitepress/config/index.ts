@@ -8,6 +8,8 @@ import { fr } from './fr'
 import { pt } from './pt'
 import { de } from './de'
 import { it } from './it'
+import { ja } from './ja'
+import { ko } from './ko'
 
 export default defineConfig({
   ...shared,
@@ -39,6 +41,14 @@ export default defineConfig({
     it: {
       label: 'Italiano',
       ...it,
+    },
+    ja: {
+      label: '日本語',
+      ...ja,
+    },
+    ko: {
+      label: '한국어',
+      ...ko,
     },
   },
 })
