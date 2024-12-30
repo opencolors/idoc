@@ -10,6 +10,8 @@ import { de } from './de'
 import { it } from './it'
 import { ja } from './ja'
 import { ko } from './ko'
+import { ru } from './ru'
+import { ar } from './ar'
 
 export default defineConfig({
   ...shared,
@@ -49,6 +51,14 @@ export default defineConfig({
     ko: {
       label: '한국어',
       ...ko,
+    },
+    ru: {
+      label: 'Русский',
+      ...ru,
+    },
+    ar: {
+      label: 'العربية',
+      ...ar,
     },
   },
 })
