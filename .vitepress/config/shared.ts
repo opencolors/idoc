@@ -68,6 +68,15 @@ export default defineConfig({
       gtag('js', new Date());
       gtag('config', 'G-X0C67TVVXR');`,
     ],
+    [
+      'script',
+      {
+        async: 'async',
+        // 记得替换成你的真正的 src
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3961359407117622',
+        crossorigin: 'anonymous',
+      },
+    ],
   ],
   transformPageData(pageData) {
     const canonicalUrl = `https://idoc.dev/${pageData.relativePath}`.replace(/index\.md$/, '').replace(/\.md$/, '')
