@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export const ar = defineConfig({
   lang: 'ar',
+  dir: 'rtl',
   title: 'iDoc',
   titleTemplate: 'API & الدليل & للمطورين',
   description: 'iDoc.dev - يدعم لغات تطوير متعددة، ولغات توثيق متعددة، للمطورين',
