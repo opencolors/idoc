@@ -19,6 +19,9 @@
   -webkit-text-fill-color: var(--vp-home-hero-name-color);
   text-align: center;
 }
+.is-home .main .heading {
+  align-items: center;
+}
 .is-home .main .actions {
   justify-content: center;
 }

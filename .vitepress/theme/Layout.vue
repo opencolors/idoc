@@ -20,7 +20,7 @@ const shareX = computed(() => `${shareText[lang.value]} X`)
 const shareFb = computed(() => `${shareText[lang.value]} Facebook`)
 
 const url = computed(() => {
-  const pageUrl = `https://node.idoc.dev/${page.value.relativePath}`.replace(/index\.md$/, '').replace(/\.md$/, '')
+  const pageUrl = `https://idoc.dev/${page.value.relativePath}`.replace(/index\.md$/, '').replace(/\.md$/, '')
   return encodeURIComponent(pageUrl)
 })
 const shareXLink = computed(
@@ -50,5 +50,30 @@ watchEffect(() => {
 </script>
 
 <template>
-  <DefaultTheme.Layout />
+  <DefaultTheme.Layout>
+    <template #aside-top>
+      <div class="share">
+        <div class="share-item">
+          <a :href="shareXLink" target="_blank" :title="shareX">
+            <img src="https://idoc.dev/x-logo.svg" alt="X" class="logo x-logo" />
+          </a>
+        </div>
+        <div class="share-item">
+          <a :href="shareFbLink" target="_blank" :title="shareFb">
+            <img src="https://idoc.dev/fb-logo.svg" alt="Facebook" class="logo fb-logo" />
+          </a>
+        </div>
+      </div>
+    </template>
+    <template #aside-ads-before>
+      <ins
+        class="adsbygoogle"
+        style="display: block"
+        data-ad-client="ca-pub-3961359407117622"
+        data-ad-slot="4724601302"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+    </template>
+  </DefaultTheme.Layout>
 </template>
