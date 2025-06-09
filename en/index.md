@@ -13,7 +13,7 @@ features:
         alt: Node.js
     title: Node.js
     details: Run JavaScript Everywhere
-    link: https://node.idoc.dev
+    link: https://idoc.dev/nodejs/
 
 ---
 

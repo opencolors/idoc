@@ -21,3 +21,28 @@
 .is-home .main .actions {
   justify-content: center;
 }
+table .custom-block {
+  margin: 0 !important;
+  padding: 8px !important;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  gap: 16px;
+}
+.share-item {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  .x-logo {
+    background-color: black;
+  }
+}

@@ -12,6 +12,6 @@ features:
         alt: Node.js
     title: Node.js
     details: どこでも JavaScript を実行
-    link: https://node.idoc.dev/ja/
+    link: https://idoc.dev/ja/nodejs/
 
 ---

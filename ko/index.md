@@ -12,5 +12,5 @@ features:
       alt: Node.js
     title: Node.js
     details: 어디서나 JavaScript 실행
-    link: https://node.idoc.dev/ko/
+    link: https://idoc.dev/ko/nodejs/
 ---

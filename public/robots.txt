@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://idoc.dev/sitemap.xml
-Sitemap: https://node.idoc.dev/sitemap.xml

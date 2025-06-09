@@ -1,10 +1,36 @@
 <script setup lang="ts">
-import './custom.css'
-import DefaultTheme from 'vitepress/theme'
-import { useData, inBrowser } from 'vitepress'
+
 import { watchEffect } from 'vue'
 
-const { lang } = useData()
+import './custom.css'
+import DefaultTheme from 'vitepress/theme'
+import { inBrowser, useData } from 'vitepress'
+import { computed, onMounted } from 'vue'
+import { shareText } from './config'
+
+declare global {
+  interface Window {
+    adsbygoogle: any[]
+  }
+}
+
+const { lang, title, page } = useData()
+
+const shareX = computed(() => `${shareText[lang.value]} X`)
+const shareFb = computed(() => `${shareText[lang.value]} Facebook`)
+
+const url = computed(() => {
+  const pageUrl = `https://node.idoc.dev/${page.value.relativePath}`.replace(/index\.md$/, '').replace(/\.md$/, '')
+  return encodeURIComponent(pageUrl)
+})
+const shareXLink = computed(
+  () => `https://twitter.com/intent/tweet?text=${encodeURIComponent(title.value)}&url=${url.value}`
+)
+const shareFbLink = computed(() => `https://www.facebook.com/sharer/sharer.php?u=${url.value}`)
+
+onMounted(() => {
+  ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+})
 
 const getRootDomain = (): string => {
   const hostname = window.location.hostname

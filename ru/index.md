@@ -11,5 +11,5 @@ features:
       src: '/node-logo.svg'
     title: Node.js
     details: Запускайте JavaScript везде
-    link: https://node.idoc.dev/ru/
+    link: https://idoc.dev/ru/nodejs/
 ---

@@ -11,5 +11,5 @@ features:
       src: '/node-logo.svg'
     title: Node.js
     details: Ejecuta JavaScript en todas partes
-    link: https://node.idoc.dev/es/
+    link: https://idoc.dev/es/nodejs/
 ---

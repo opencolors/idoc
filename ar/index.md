@@ -12,5 +12,5 @@ features:
       alt: Node.js
     title: Node.js
     details: "تشغيل JavaScript في كل مكان"
-    link: https://node.idoc.dev/ar/
+    link: https://idoc.dev/ar/nodejs/
 ---

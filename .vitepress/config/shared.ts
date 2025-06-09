@@ -1,9 +1,20 @@
 import { defineConfig } from 'vitepress'
 import fs from 'node:fs'
+import type { PageData } from 'vitepress'
 
-// import { zhSearch } from './zh.ts'
+import { zhSearch } from './zh.ts'
+import { esSearch } from './es.ts'
+import { frSearch } from './fr.ts'
+import { ptSearch } from './pt.ts'
+import { deSearch } from './de.ts'
+import { itSearch } from './it.ts'
+import { jaSearch } from './ja.ts'
+import { koSearch } from './ko.ts'
+import { ruSearch } from './ru.ts'
+import { arSearch } from './ar.ts'
+
 export default defineConfig({
-  title: 'Node.js Document',
+  title: 'iDoc.dev',
 
   rewrites: {
     'en/:rest*': ':rest*',
@@ -20,7 +31,7 @@ export default defineConfig({
       return items.filter(item => {
         item.changefreq = 'monthly'
         if (item.url.includes('/api')) {
-          item.priority = 0.9
+          item.priority = 1
         } else if (item.url.includes('/guide')) {
           item.priority = 0.8
         }
@@ -78,22 +89,34 @@ export default defineConfig({
       },
     ],
   ],
-  transformPageData(pageData) {
+  transformPageData(pageData: PageData) {
     const canonicalUrl = `https://idoc.dev/${pageData.relativePath}`.replace(/index\.md$/, '').replace(/\.md$/, '')
 
     pageData.frontmatter.head ??= []
     pageData.frontmatter.head.push(['link', { rel: 'canonical', href: canonicalUrl }])
+    pageData.frontmatter.head.push(['meta', { property: 'og:url', content: canonicalUrl }])
+
+    return pageData
   },
 
   themeConfig: {
     logo: { src: '/logo.svg', width: 24, height: 24, alt: 'iDoc.dev' },
-    // search: {
-    //   provider: 'local',
-    //   options: {
-    //     locales: {
-    //       ...zhSearch,
-    //     },
-    //   },
-    // },
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          ...zhSearch,
+          ...esSearch,
+          ...frSearch,
+          ...ptSearch,
+          ...deSearch,
+          ...itSearch,
+          ...jaSearch,
+          ...koSearch,
+          ...ruSearch,
+          ...arSearch,
+        },
+      },
+    },
   },
 })
