@@ -17,6 +17,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: var(--vp-home-hero-name-color);
+  text-align: center;
 }
 .is-home .main .actions {
   justify-content: center;
